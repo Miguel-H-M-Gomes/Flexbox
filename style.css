@@ -1,0 +1,79 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* White like the bottom of a Pokéball */
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EE1515; /* Pokéball red */
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 5px solid #222224; /* Black stripe like in Pokéball */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #222224; /* Black on hover */
+}
+
+/* GALERIA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #ffffff; /* White background */
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(238, 21, 21, 0.2); /* Red shadow */
+  border: 3px solid #222224; /* Black border */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(238, 21, 21, 0.4); /* Darker red shadow on hover */
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #EE1515; /* Pokéball red */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  border-top: 5px solid #222224; /* Black stripe like in Pokéball */
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222224; /* Black text */
+}
